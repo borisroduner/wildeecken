@@ -157,6 +157,7 @@ a.badge:focus-visible {
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   gap: 1rem;
   margin-top: 1rem;
+  align-items: start;
 }
 
 .gallery-placeholder {
@@ -181,7 +182,6 @@ a.badge:focus-visible {
 
 .gallery img {
   width: 100%;
-  height: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
   border-radius: var(--radius);
