@@ -143,6 +143,13 @@ section.content-block h2 {
   font-size: 0.9rem;
   font-weight: 600;
   margin-bottom: 1rem;
+  text-decoration: none;
+}
+
+a.badge:hover,
+a.badge:focus-visible {
+  background: #e3ecdd;
+  border-color: var(--color-primary);
 }
 
 .gallery {
