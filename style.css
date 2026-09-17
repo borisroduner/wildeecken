@@ -104,7 +104,18 @@ main {
   padding: 2rem 1.25rem 3rem;
 }
 
+body.home {
+  background-color: var(--color-bg);
+  background-image:
+    radial-gradient(circle at 8% 15%, rgba(244, 201, 93, 0.28), transparent 42%),
+    radial-gradient(circle at 92% 12%, rgba(73, 182, 172, 0.24), transparent 46%),
+    radial-gradient(circle at 85% 85%, rgba(63, 107, 60, 0.2), transparent 48%),
+    radial-gradient(circle at 10% 88%, rgba(224, 112, 58, 0.16), transparent 42%);
+  background-attachment: fixed;
+}
+
 .hero {
+  position: relative;
   background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--radius);
@@ -114,6 +125,17 @@ main {
 
 .hero h2 {
   margin-top: 0;
+  padding-bottom: 0.7rem;
+}
+
+.hero h2::after {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 4px;
+  margin-top: 0.65rem;
+  border-radius: 2px;
+  background: linear-gradient(90deg, #f4c95d, #49b6ac, #3f6b3c);
 }
 
 .card-grid {
@@ -127,11 +149,56 @@ main {
   background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--radius);
-  padding: 1.5rem;
+  padding: 0;
+  overflow: hidden;
   text-decoration: none;
   color: var(--color-text);
   display: block;
   transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.card-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 1.5rem;
+  border-top: 3px solid var(--card-accent, var(--color-accent));
+}
+
+.card-body h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.card-body h3::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: var(--card-accent, var(--color-accent));
+}
+
+.card-hobby {
+  --card-accent: #e0703a;
+}
+
+.card-naturgarten {
+  --card-accent: #2f8f86;
+}
+
+.card-hobby:hover {
+  box-shadow: 0 10px 24px rgba(224, 112, 58, 0.25);
+}
+
+.card-naturgarten:hover {
+  box-shadow: 0 10px 24px rgba(47, 143, 134, 0.25);
 }
 
 .card:hover {
