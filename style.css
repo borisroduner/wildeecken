@@ -165,6 +165,10 @@ body.home {
   object-position: center top;
 }
 
+.card-hobby .card-image {
+  object-position: center bottom;
+}
+
 .card-body {
   padding: 1.5rem;
   border-top: 3px solid var(--card-accent, var(--color-accent));
