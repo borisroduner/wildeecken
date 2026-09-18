@@ -478,6 +478,17 @@ footer.site-footer {
   padding: 2rem 1.25rem;
 }
 
+footer.site-footer .social-links {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+  margin: 0 0 0.75rem;
+}
+
+footer.site-footer .social-links .badge {
+  margin-bottom: 0;
+}
+
 footer.site-footer .copyright-note {
   margin: 0.5rem 0 0;
   font-size: 0.8rem;
