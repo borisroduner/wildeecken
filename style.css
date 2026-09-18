@@ -477,3 +477,16 @@ footer.site-footer {
   font-size: 0.85rem;
   padding: 2rem 1.25rem;
 }
+
+footer.site-footer .copyright-note {
+  margin: 0.5rem 0 0;
+  font-size: 0.8rem;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer.site-footer .copyright-note a {
+  color: inherit;
+  text-decoration: underline;
+}
