@@ -251,6 +251,33 @@ a.badge:focus-visible {
   border-color: var(--color-primary);
 }
 
+.species-label {
+  margin: 1rem 0 0.5rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--color-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.species-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.6rem;
+  margin: 0 0 0.5rem;
+  padding: 0;
+}
+
+.species-list li {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  padding: 0.35rem 0.9rem;
+  font-size: 0.9rem;
+  color: var(--color-primary-dark);
+}
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
