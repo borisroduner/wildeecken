@@ -245,6 +245,10 @@ section.content-block h2 {
   text-decoration: none;
 }
 
+.badge-icon {
+  flex-shrink: 0;
+}
+
 a.badge:hover,
 a.badge:focus-visible {
   background: #e3ecdd;
