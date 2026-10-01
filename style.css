@@ -211,12 +211,20 @@ body.home {
   --card-accent: #2f8f86;
 }
 
+.card-fotografie {
+  --card-accent: #c9972e;
+}
+
 .card-hobby:hover {
   box-shadow: 0 10px 24px rgba(224, 112, 58, 0.25);
 }
 
 .card-naturgarten:hover {
   box-shadow: 0 10px 24px rgba(47, 143, 134, 0.25);
+}
+
+.card-fotografie:hover {
+  box-shadow: 0 10px 24px rgba(201, 151, 46, 0.25);
 }
 
 .card:hover {
