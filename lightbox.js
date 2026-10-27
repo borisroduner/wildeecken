@@ -53,7 +53,7 @@
     document.body.style.overflow = "";
   }
 
-  document.querySelectorAll(".gallery img").forEach((img) => {
+  document.querySelectorAll(".gallery img, img.zoomable").forEach((img) => {
     img.tabIndex = 0;
     img.setAttribute("role", "button");
     img.style.cursor = "zoom-in";
