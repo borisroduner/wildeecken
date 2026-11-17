@@ -369,9 +369,14 @@ a.badge:focus-visible {
 }
 
 .log-meta {
-  margin: 0.2rem 0 1.25rem;
+  margin: 0.2rem 0 0.75rem;
   font-size: 0.85rem;
   color: var(--color-muted);
+}
+
+.log-text {
+  margin: 0 0 1.25rem;
+  max-width: 65ch;
 }
 
 .log-stages {
