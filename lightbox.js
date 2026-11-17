@@ -33,7 +33,7 @@
   }
 
   function openLightbox(img) {
-    const gallery = img.closest(".gallery");
+    const gallery = img.closest("[data-lightbox-group]") || img.closest(".gallery");
     galleryImages = gallery ? Array.from(gallery.querySelectorAll("img")) : [img];
     currentIndex = galleryImages.indexOf(img);
     render();
